@@ -1,0 +1,46 @@
+/**
+ * Sakura.load.css
+ * Made by HaruhiYunona(lashanda13fg@gmail.com)
+ */
+
+.sakura-load {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sakura-loader {
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    position: absolute;
+}
+
+#sakura-loader-d {
+    width: 60px;
+    height: 60px;
+}
+
+.sakura-load-msg {
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.sakura-loader-picture {
+    width: 140px;
+    height: auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 3px;
+    border: #fff solid;
+    position: absolute;
+}
