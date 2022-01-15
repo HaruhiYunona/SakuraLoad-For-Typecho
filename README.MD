@@ -26,7 +26,32 @@
 
 ![](https://tva2.sinaimg.cn/large/0088jPZqly1gyeagtaeekj30re0phtg3.jpg)
 
-### 3.注意事项
+
+
+### 3.特殊用法
+将代码以下代码写在对应的前端js方法里可以控制加载条显隐和加载条文字,例如前端发出Ajax请求时。
+```javascript
+//发出Ajax请求前，控制加载条文字,控制加载条显示。如果是图片样式则不用控制文字显示
+//控制加载条文字
+$('.sakura-load-msg').html('正在发表看法...');
+//控制加载条显示
+$('.sakura-load').show();
+$.ajax({
+    url: 'https://domain.com',
+    data: '{"id":"1","msg":"abcd"}',
+    dataType: 'JSON',
+    headers: { 'Content-Type': 'application/json;charset=utf8' },
+    type: 'POST',
+    success: function (data) {
+        //已经获取到返回的信息,关闭加载条
+        $('.sakura-load').hide();
+    }
+});
+```
+
+
+
+### 4.注意事项
 
 ###### 1.jQuery库必须要有。
 
