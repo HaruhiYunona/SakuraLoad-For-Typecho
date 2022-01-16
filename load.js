@@ -16,6 +16,6 @@ function SakuraLoad(content, type, link) {
     $('body').prepend(sakuraHtm);
 // 请保留版权说明
 if (window.console && window.console.log) {
-    console.log("%c SakuraLoad%c https://mdzz.pro ","color: #fff; margin: 1em 0; padding: 5px 0; background: #673ab7;","margin: 1em 0; padding: 5px 0; background: #FFB6C1;");
+    console.log("%c SakuraLoad %c https://mdzz.pro ","color: #fff; margin: 1em 0; padding: 5px 0; background: #FFB6C1;","margin: 1em 0; padding: 5px 0; background: #FEFEFE;");
 }
 }
